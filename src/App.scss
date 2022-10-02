@@ -149,8 +149,27 @@
     left: -4vw;
     rotate: 5deg;
   }
-  .graphic{
+  .graphic {
     width: 40vw;
     // padding: 0 15vh;
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3%;
+  font-size: 1.1rem;
+  font-family: "LosFeliz-Bold";
+  color: var(--black);
+  position: absolute;
+  bottom: 0px;
+  width: 85%;
+  opacity: 0.7;
+  .pp{
+    margin-left: 3vw;
   }
 }
