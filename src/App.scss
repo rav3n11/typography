@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
 }
 .light {
@@ -32,9 +32,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: absolute;
+  position: sticky;
   top: 0;
   margin: 5%;
+  margin-bottom: 10vh;
   .logo {
     margin: 0 5%;
   }
@@ -54,6 +55,10 @@
 
 /* 404 */
 .not-found {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
   .content {
     display: flex;
     flex-direction: column;
@@ -63,6 +68,8 @@
     .party-piece {
       font-size: 5rem;
       font-family: "Shadows Into Light", cursive;
+      font-weight: 800;
+      margin-bottom: -3rem;
     }
     .speech {
       font-size: 2rem;
@@ -126,11 +133,24 @@
       }
     }
   }
-  .point{
+  .point {
     font-size: 1.4rem;
-      font-family: "LosFeliz-Bold";
-      color: var(--black);
-      width: 30vw;
-      text-align: start;
+    font-family: "LosFeliz-Bold";
+    color: var(--black);
+    width: 26vw;
+    padding-top: 1rem;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .arrow-up {
+    width: 5rem;
+    position: absolute;
+    top: 35vh;
+    left: -4vw;
+    rotate: 5deg;
+  }
+  .graphic{
+    width: 40vw;
+    // padding: 0 15vh;
   }
 }
